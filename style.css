@@ -51,7 +51,7 @@ body{
 
 .hero h1 {
     font-family: 'sacramento', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font: bold;
 }
 
@@ -90,9 +90,25 @@ body{
   scroll-padding-top: 3px ;
   --pink: #e91e63; /* kalau belum didefinisikan */
 }
+
 .mynavbar .offcanvas {
-  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6) !important; /* Hitam semi-transparan */
+  backdrop-filter: blur(10px); /* Efek blur */
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  color: white !important;
+  z-index: 1055; /* Pastikan muncul di atas */
 }
+
+.mynavbar .offcanvas-title,
+.mynavbar .nav-link {
+  color: #ffffff !important; /* Teks putih */
+  font-size: 1.2rem;
+}
+
+.mynavbar .btn-close {
+  filter: invert(1); /* Biar tombol close kelihatan di background gelap */
+}
+
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
@@ -102,7 +118,7 @@ body{
 }
 
 .mynavbar .nav-link {
-  text-transform: uppercase;
+  color: #ffffff !important;
 }
 
 
@@ -265,10 +281,13 @@ body{
   overflow: hidden;
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 90%;              
-  margin: 0 auto;
+  width: 100%;         /* Buat selebar kontainer induknya */
+  max-width: 1200px;   /* Batas maksimal lebarnya */
+  margin: 0 auto;      /* Tengah secara horizontal */
   border-radius: 20px;
+  padding: 1.5rem;
 }
+
 
 .mandiri-card:hover {
       transform: translateY(-5px);
