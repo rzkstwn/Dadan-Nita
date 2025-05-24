@@ -76,10 +76,9 @@ body{
 
 
 :root {
-  scroll-padding-top: 100x;
+  scroll-padding-top: 3px ;
   --pink: #e91e63; /* kalau belum didefinisikan */
 }
-
 .mynavbar .offcanvas {
   height: 100vh;
 }
@@ -120,15 +119,15 @@ body{
 }
 
 .home h3 {
-  color: #444;
-  font-size: 1.5rem;
+  color: #090909;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 .home p,
 .gifts p {
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 1rem;
+  color: #2e2e2e;
 }
 
 
