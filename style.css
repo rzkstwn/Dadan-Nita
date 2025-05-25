@@ -226,19 +226,15 @@ body{
  }
 .mandiri-card {
   position: relative;
-  background-image: url('img/background.jpeg');
+  background-image: 
+    url('img/background.jpeg');
   background-size: cover;
   background-position: center;
+  border-radius: 20px;
   overflow: hidden;
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;         
-  max-width: 1200px;  
-  margin: 0 auto;      
-  border-radius: 20px;
-  padding: 1.5rem;
 }
-
 
 .mandiri-card:hover {
       transform: translateY(-5px);
@@ -263,7 +259,6 @@ body{
   font-size: 0.8rem;
   color: #faf9f9;
 }
-
 footer {
   padding: 0.5rem;
   background-color: #3d6c78;
