@@ -212,9 +212,9 @@ body{
 }
 
 .gifts {
-    background-color: #ffffff;
-    padding-top: 4rem;
-    min-height: 100vh;
+  background-color: #ffffff;
+  padding-bottom: 1rem; /* ubah ke kecil */
+  margin-bottom: 0;      /* pastikan tidak ada margin ekstra */
 }
 
 .gifts h2
@@ -234,6 +234,7 @@ body{
   overflow: hidden;
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem; 
 }
 
 .mandiri-card:hover {
@@ -260,9 +261,10 @@ body{
   color: #faf9f9;
 }
 footer {
-  padding: 0.5rem;
+  padding: 0.75rem 1rem;
   background-color: #3d6c78;
-  color:white;
+  color: white;
+  margin: 0; /* pastikan tidak ada margin ekstra */
 }
 
 footer a {
@@ -291,6 +293,22 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   line-height: 0;
+}
+
+@media (max-width: 576px) {
+  .gifts {
+    padding-bottom: 0.5rem;
+  }
+
+  .mandiri-card {
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    padding: 0.5rem 1rem;
+  }
+
+
 }
 
 @keyframes rotating {
